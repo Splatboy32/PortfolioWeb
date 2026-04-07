@@ -3,27 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <title>Splatboy Portfolio</title>
-  <style>
-    body {
-      margin:0; 
-      height:100vh; 
-      display:flex; 
-      justify-content:center; 
-      align-items:center; 
-      background:#111; 
-      color:white; 
-      font-family:sans-serif; 
-      flex-direction:column;
-      text-align:center;
-    }
-    .gear { font-size:80px; animation:spin 6s linear infinite; }
-    @keyframes spin { from{transform:rotate(0deg);} to{transform:rotate(360deg);} }
-  </style>
+  <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-  <div class="gear">⚙️</div>
+
+<!-- ONDAS LATERALES -->
+<div class="bg-layer left layer1" style="background-image: url('assets/images/background1.png');"></div>
+<div class="bg-layer right layer1" style="background-image: url('assets/images/background1.png');"></div>
+
+<div class="bg-layer left layer2" style="background-image: url('assets/images/background2.png');"></div>
+<div class="bg-layer right layer2" style="background-image: url('assets/images/background2.png');"></div>
+
+<div class="bg-layer left layer3" style="background-image: url('assets/images/background3.png');"></div>
+<div class="bg-layer right layer3" style="background-image: url('assets/images/background3.png');"></div>
+
+<!-- CONTENIDO -->
+<div class="main-container">
+
+  <div class="gear-container">
+    <img src="assets/images/gear.png" class="gear-image">
+
+    <div class="profile-image">
+      <img src="assets/images/profilePic.jpg">
+    </div>
+  </div>
+
   <h1>Work In Progress</h1>
   <p>Interactive portfolio coming soon</p>
-  <p>GitHub: <a href="https://github.com/splatboy32" style="color:white">splatboy32</a></p>
+  <p>GitHub: 
+    <a href="https://github.com/splatboy32" target="_blank">
+      splatboy32
+    </a>
+  </p>
+
+</div>
+
+<script src="js/gearAnimation.js"></script>
+
 </body>
 </html>
